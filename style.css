@@ -151,7 +151,7 @@ body {
 
 /* Plants Header */
 .plants-header {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 60px;
 }
 
@@ -234,6 +234,68 @@ body {
     margin: auto 20px 20px 20px;
 }
 
+/* Plant Lover Section */
+.plant-lover-section {
+    background-color: rgb(245, 248, 255);
+    padding: 80px 0;
+}
+
+.plant-lover-container {
+    width: 1140px;
+    height: 597px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.plant-lover-image {
+    width: 540px;
+    height: 597px;
+    position: relative;
+}
+
+.plant-lover-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.trusted-badge {
+    position: absolute;
+    top: -150px;
+    right: -120px;
+    width: 300px;
+}
+
+.trusted-badge img {
+    width: 100%;
+}
+
+.plant-lover-content {
+    width: 570px;
+}
+
+.plant-lover-title {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.plant-lover-list {
+    padding-left: 20px;
+}
+
+.plant-lover-list li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.515);
+    margin-bottom: 20px;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 576px) {
 
@@ -280,8 +342,8 @@ body {
     .hero-content {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
+        /* flex-direction: column; */
         text-align: left;
         justify-content: flex-start;
     }
@@ -295,9 +357,7 @@ body {
         font-size: 14px;
         margin-top: 16px;
     }
-}
-
-@media screen and (max-width: 576px) {
+/* Plant section Responsive */
     .plants-section {
         padding: 40px 0;
     }
@@ -350,5 +410,40 @@ body {
         font-size: 12px;
         padding: 10px 20px;
         margin: auto 15px 15px 15px;
+    }
+/* Plant Lover Section Responsive */
+    .plant-lover-section {
+        padding: 40px 0;
+    }
+
+    .plant-lover-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 16px;
+    }
+
+    .plant-lover-image {
+        width: 100%;
+        order: -1;
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
+    .plant-lover-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .plant-lover-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .plant-lover-list li {
+        font-size: 16px;
+        margin-bottom: 15px;
     }
 }
