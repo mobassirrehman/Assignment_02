@@ -22,13 +22,11 @@ body {
 
 }
 
-/* Logo */
 .logo img {
     width: 135px;
     height: 82px;
 }
 
-/* Nav items container*/
 .nav-items {
     display: flex;
     align-items: center;
@@ -75,7 +73,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero-section {
     background-color: rgb(245, 248, 255);
     display: flex;
@@ -92,7 +90,6 @@ body {
     margin: 0 auto;
 }
 
-/* Hero Content (Left side) */
 .hero-content {
     width: 570px;
     height: 299px;
@@ -121,7 +118,7 @@ body {
 .hero-paragraph {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 42px;
@@ -135,6 +132,106 @@ body {
 .hero-image img {
     width: 100%;
     height: 100%;
+}
+
+/* Plant Secton */
+
+.plants-section {
+    background-color: rgb(245, 248, 255);
+    padding: 80px 0;
+}
+
+.plants-container {
+    width: 1140px;
+    height: 1186px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Plants Header */
+.plants-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.plants-title {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.our-text {
+    color: #E95A08;
+}
+
+.plants-text {
+    color: #000000;
+}
+
+.plants-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.52);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Plant Card */
+
+.plant-card {
+    width: 270px;
+    height: 485px;
+    background-color: rgb(245, 248, 255);
+}
+
+.card-image {
+    width: 100%;
+    height: 300px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.card-price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #E95A08;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto 20px 20px 20px;
 }
 
 /* Mobile Responsiveness */
@@ -152,60 +249,106 @@ body {
         height: 49px;
     }
 
-        .nav-items {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            gap: 0;
-            /* Remove gap */
-        }
-
-        .nav-items li:first-child,
-        .nav-items li:nth-child(2),
-        .nav-items li:nth-child(3) {
-            display: none !important;
-        }
-
-        .nav-link.cart {
-            font-size: 14px;
-        }
-
-        /* Hero Section Mobile */
-        .hero-container {
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-            padding: 20px 16px;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Image moves to top on mobile */
-        .hero-image {
-            order: -1;
-            width: 100%;
-            height: 250px;
-            max-width: 400px;
-        }
-
-
-        .hero-content {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            justify-content: flex-start;
-        }
-
-        .hero-title {
-            font-size: 32px;
-            margin-bottom: 16px;
-        }
-
-        .hero-paragraph {
-            font-size: 14px;
-            margin-top: 16px;
-        }
+    .nav-items li:nth-child(1),
+    .nav-items li:nth-child(2),
+    .nav-items li:nth-child(3) {
+        display: none;
     }
+
+    .nav-link.cart {
+        font-size: 14px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px 16px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+        width: 100%;
+        height: 250px;
+        max-width: 400px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .hero-paragraph {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .plants-section {
+        padding: 40px 0;
+    }
+
+    .plants-container {
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+    }
+
+    .plants-header {
+        margin-bottom: 40px;
+    }
+
+    .plants-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .plants-subtitle {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .plant-card {
+        width: 100%;
+        height: 400px;
+    }
+
+    .card-image {
+        height: 240px;
+    }
+
+    .card-name {
+        font-size: 16px;
+        margin: 15px 0 8px 0;
+    }
+
+    .card-price {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .add-to-cart-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+        margin: auto 15px 15px 15px;
+    }
+}
