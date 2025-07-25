@@ -653,9 +653,11 @@ body {
       .join-form {
         flex-direction: column;
         gap: 15px;
+        width: 100%;
       }
       
       .join-form input {
         width: 100%;
+        max-width: none;
       }
 }
