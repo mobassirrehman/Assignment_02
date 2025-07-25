@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --section-bg: rgb(245, 248, 255);
     --section-padding: 80px 0;
     --section-padding-mobile: 40px 0;
 }
+
 .hero-section,
 .plants-section,
 .plant-lover-section,
@@ -15,6 +17,7 @@
     background-color: var(--section-bg);
     padding: var(--section-padding);
 }
+
 body {
     font-family: 'Inter', "Noto Serif", serif;
     background-color: rgb(245, 248, 255);
@@ -292,8 +295,9 @@ body {
     color: rgba(0, 0, 0, 0.515);
     margin-bottom: 20px;
 }
+
 /* Latest Deals Section */
-  .deals-header {
+.deals-header {
     width: 1440px;
     height: 138px;
     max-width: 100%;
@@ -303,75 +307,75 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
-  }
-  
-  .deals-title {
+}
+
+.deals-title {
     font-family: 'Noto Serif', serif;
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 20px;
-  }
-  
-  .latest-text {
+}
+
+.latest-text {
     color: #E95A08;
-  }
-  
-  .deals-text {
+}
+
+.deals-text {
     color: #000000;
-  }
-  
-  .deals-subtitle {
+}
+
+.deals-subtitle {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 22px;
     color: rgba(0, 0, 0, 0.514);
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  /* Card Layout Container */
-  .deals-container {
+}
+
+/* Card Layout Container */
+.deals-container {
     width: 1140px;
     height: 424px;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     gap: 20px;
-  }
-  
-  .deals-left {
+}
+
+.deals-left {
     width: 35%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .deals-right {
+}
+
+.deals-right {
     width: 65%;
-  }
-  
-  /* Deal Cards */
-  .deal-card {
+}
+
+/* Deal Cards */
+.deal-card {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-  }
-  
-  .deals-left .deal-card {
+}
+
+.deals-left .deal-card {
     height: 202px;
-  }
-  
-  .deals-right .deal-card {
+}
+
+.deals-right .deal-card {
     height: 424px;
-  }
-  
-  .deal-card img {
+}
+
+.deal-card img {
     width: 100%;
     height: 100%;
-  }
-  
-  .card-overlay {
+}
+
+.card-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -385,15 +389,15 @@ body {
     justify-content: center;
     align-items: center;
 }
-  
-  .card-overlay h3 {
+
+.card-overlay h3 {
     font-family: 'Noto Serif', serif;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 15px;
-  }
-  
-  .shop-btn {
+}
+
+.shop-btn {
     background: transparent;
     border: none;
     color: rgb(255, 255, 255);
@@ -403,7 +407,8 @@ body {
     font-size: 14px;
     cursor: pointer;
     text-decoration: underline;
-  }
+}
+
 /* Join Section */
 .join-section {
     display: flex;
@@ -415,35 +420,103 @@ body {
     background-image: url('./assets/news-letter-bg.png');
     background-position: center;
     background-size: cover;
-  }
-  
-  .join-section h2 {
+}
+
+.join-section h2 {
     font-family: 'Noto Serif', serif;
     font-weight: 700;
     font-size: 50px;
     color: rgb(255, 255, 255);
     margin-bottom: 40px;
-  }
-  
-  .join-form {
+}
+
+.join-form {
     display: flex;
-  }
-  
-  .join-form input {
+}
+
+.join-form input {
     padding: 15px 20px;
     border: none;
     width: 650px;
-  }
-  
-  .join-form button {
+}
+
+.join-form button {
     background: #E95A08;
     color: rgb(255, 255, 255);
     border: none;
     padding: 15px 30px;
     cursor: pointer;
-  }
+}
+/* Footer Styles */
+.footer {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.left {
+    flex: 1;
+    max-width: 300px;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.52);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.col a {
+    color: rgba(0, 0, 0, 0.52);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+
+.social a {
+    display: inline-block;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 576px) {
+
     .hero-section,
     .plants-section,
     .plant-lover-section,
@@ -591,73 +664,110 @@ body {
         margin-bottom: 15px;
     }
     /* latest-deals-section */
-      .deals-header {
+    .deals-header {
         width: 100%;
         height: auto;
         padding: 0 14px;
         margin-bottom: 30px;
-      }
-      
-      .deals-title {
+    }
+
+    .deals-title {
         font-size: 32px;
         margin-bottom: 16px;
-      }
-      
-      .deals-subtitle {
+    }
+
+    .deals-subtitle {
         font-size: 16px;
-      }
-      
-      .deals-container {
+    }
+
+    .deals-container {
         width: 100%;
         height: auto;
         flex-direction: column;
         padding: 0 16px;
         gap: 15px;
-      }
-      
-      .deals-left,
-      .deals-right {
+    }
+
+    .deals-left,
+    .deals-right {
         width: 100%;
-      }
-      
-      .deals-left {
+    }
+
+    .deals-left {
         display: flex;
         flex-direction: column;
         gap: 12px;
-      }
-      
-      .deals-right .deal-card {
+    }
+
+    .deals-right .deal-card {
         height: 300px;
-      }
-      
-      .card-overlay {
+    }
+
+    .card-overlay {
         padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
-      
-      .card-overlay h3 {
+    }
+
+    .card-overlay h3 {
         font-size: 20px;
         margin-bottom: 12px;
-      }
-      .join-section {
+    }
+
+    .join-section {
         padding: 80px 16px;
-      }
-      
-      .join-section h2 {
+    }
+
+    .join-section h2 {
         font-size: 32px;
-      }
-      
-      .join-form {
+    }
+
+    .join-form {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-      }
-      
-      .join-form input {
+    }
+
+    .join-form input {
         width: 100%;
         max-width: none;
-      }
+    }
+    .join-form button {
+        width: 100%
+    }
+/* Footer Styles */
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 15px;
+        align-items: flex-start;
+    }
+
+    .left {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .col {
+        gap: 15px;
+    }
+
+    .social {
+        justify-content: flex-start;
+        gap: 12px;
+        margin-right: 0;
+    }
+
+    .social img {
+        width: 45px;
+        height: 45px;
+    }
 }
