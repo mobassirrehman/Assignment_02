@@ -404,7 +404,44 @@ body {
     cursor: pointer;
     text-decoration: underline;
   }
-
+/* Join Section */
+.join-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 20px;
+    background-image: url('./assets/news-letter-bg.png');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .join-section h2 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+  }
+  
+  .join-form {
+    display: flex;
+  }
+  
+  .join-form input {
+    padding: 15px 20px;
+    border: none;
+    width: 650px;
+  }
+  
+  .join-form button {
+    background: #E95A08;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+  }
 /* Mobile Responsiveness */
 @media screen and (max-width: 576px) {
     .hero-section,
@@ -604,5 +641,21 @@ body {
       .card-overlay h3 {
         font-size: 20px;
         margin-bottom: 12px;
+      }
+      .join-section {
+        padding: 80px 16px;
+      }
+      
+      .join-section h2 {
+        font-size: 32px;
+      }
+      
+      .join-form {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .join-form input {
+        width: 100%;
       }
 }
