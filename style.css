@@ -705,6 +705,10 @@ body {
     .join-form input {
         flex: 1; 
     }
+    .join-form {
+        width: 100%;
+        max-width: 400px;
+    }
 /* Footer Responsive */
     .footer {
         padding: 50px 20px 30px;
