@@ -697,30 +697,15 @@ body {
     .card-overlay h3 {
         font-size: 20px;
         margin-bottom: 12px;
-    }
-
-    .join-section {
-        padding: 80px 16px;
-    }
-
+    } 
+    /* Join Section Responsive */
     .join-section h2 {
         font-size: 32px;
     }
-
-    .join-form {
-        flex-direction: column;
-        gap: 0px;
-        width: 100%;
-    }
-
     .join-form input {
-        width: 100%;
+        flex: 1; 
     }
-    .join-form button {
-        width: 100%
-    }
-/* Footer Styles */
-@media screen and (max-width: 576px) {
+/* Footer Responsive */
     .footer {
         padding: 50px 20px 30px;
     }
@@ -757,5 +742,4 @@ body {
         width: 45px;
         height: 45px;
     }
-}
 }
