@@ -88,10 +88,10 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
+/* .hero-section {
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 .hero-container {
     display: flex;
